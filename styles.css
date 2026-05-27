@@ -1024,6 +1024,19 @@ h1 .title-place {
   .nav-cta {
     justify-self: end;
     margin-top: 16px;
+    min-width: 52px;
+    min-height: 52px;
+    padding: 0 14px;
+    font-size: 0;
+    border-radius: 50%;
+  }
+
+  .nav-cta span {
+    display: none;
+  }
+
+  .nav-cta svg {
+    margin: 0;
   }
 
   .hero-content {
@@ -1052,6 +1065,8 @@ h1 .title-place {
     min-height: 90px;
     gap: 12px;
     padding-top: 10px;
+    grid-template-columns: 1fr auto;
+    align-items: center;
   }
 
   .brand img {
@@ -1059,14 +1074,12 @@ h1 .title-place {
   }
 
   .nav-cta {
+    width: 46px;
+    min-width: 46px;
     min-height: 46px;
     padding: 0 14px;
     font-size: 0;
-    margin-top: 12px;
-  }
-
-  .nav-cta svg {
-    margin: 0;
+    margin-top: 0;
   }
 
   .hero-content {
@@ -1075,22 +1088,32 @@ h1 .title-place {
   }
 
   h1 {
-    font-size: clamp(54px, 16vw, 76px);
+    font-size: clamp(48px, 14.5vw, 64px);
+  }
+
+  h1 .title-place {
+    font-size: .92em;
   }
 
   .lead {
+    max-width: 360px;
     font-size: 15px;
+    line-height: 1.48;
   }
 
   .hero-benefits {
     max-width: 360px;
-    gap: 10px;
+    gap: 8px;
+    margin-top: 24px;
   }
 
   .hero-benefits span {
     width: 100%;
     max-width: none;
     padding: 0;
+    min-height: 34px;
+    font-size: 10px;
+    line-height: 1.15;
   }
 
   .hero-benefits span:not(:last-child)::after {
@@ -1100,6 +1123,10 @@ h1 .title-place {
   .hero-cta {
     width: 100%;
     max-width: 360px;
+    min-height: 58px;
+    margin-top: 24px;
+    padding-inline: 18px;
+    font-size: 13px;
   }
 
   .copy small {
@@ -1248,5 +1275,26 @@ h1 .title-place {
 
   .footer-online {
     width: fit-content;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand img {
+    width: 118px;
+  }
+
+  h1 {
+    font-size: clamp(43px, 13.5vw, 54px);
+  }
+
+  .hero-benefits svg {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
+    padding: 5px;
+  }
+
+  .hero-cta {
+    font-size: 12px;
   }
 }
