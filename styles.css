@@ -396,8 +396,7 @@ h1 .title-place {
 }
 
 .benefits-section .benefits-grid {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 0;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .benefits-section .info-card {
