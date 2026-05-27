@@ -507,12 +507,13 @@ h1 .title-place {
 .badge {
   position: absolute;
   top: 18px;
-  right: 18px;
+  right:18px;
   padding: 8px 12px;
   background: var(--yellow);
   border-radius: 999px;
   font-size: 11px;
   font-weight: 900;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -581,6 +582,17 @@ h1 .title-place {
 .category-button.yellow {
   border-color: transparent;
   background: var(--yellow);
+}
+
+.category-button{
+  transition: color .25s ease, background .25s ease, border-color .25s ease;
+}
+
+
+.category-button:hover {
+  background: var(--red);
+  color: var(--white);
+  border-color: transparent;
 }
 
 .reviews-carousel {
