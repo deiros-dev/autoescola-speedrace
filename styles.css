@@ -1061,10 +1061,10 @@ h1 .title-place {
 
 @media (max-width: 720px) {
   .hero {
-    min-height: 100svh;
+    min-height: auto;
     background:
-      linear-gradient(180deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .9) 46%, rgba(255, 255, 255, .18) 100%),
-      url("assets/fundo.png") 68% bottom / auto 72% no-repeat;
+      linear-gradient(180deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .92) 50%, rgba(255, 255, 255, .4) 100%),
+      url("assets/fundo.png") 68% 170px / auto 62% no-repeat;
   }
 
   .hero-nav,
@@ -1081,7 +1081,7 @@ h1 .title-place {
   }
 
   .brand img {
-    width: 132px;
+    width: 160px;
   }
 
   .nav-cta {
@@ -1094,8 +1094,8 @@ h1 .title-place {
   }
 
   .hero-content {
-    min-height: calc(100svh - 90px);
-    padding: 22px 0 260px;
+    min-height: auto;
+    padding: 22px 0 16px;
   }
 
   h1 {
