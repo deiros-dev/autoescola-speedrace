@@ -396,7 +396,7 @@ h1 .title-place {
 }
 
 .benefits-section .benefits-grid {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .benefits-section .info-card {
@@ -1183,6 +1183,18 @@ h1 .title-place {
     display: none;
   }
 
+  .steps-grid article:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(227, 6, 19, .35), transparent);
+    z-index: 0;
+    pointer-events: none;
+  }
+
   .steps-grid article:not(:last-child)::after {
     display: none;
   }
@@ -1207,7 +1219,8 @@ h1 .title-place {
     grid-template-columns: 1fr;
   }
 
-  .benefits-section .benefits-grid {
+  .benefits-section .benefits-grid,
+  .steps-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1222,6 +1235,10 @@ h1 .title-place {
   .steps-grid i {
     width: 68px;
     height: 68px;
+  }
+
+  .steps-grid article:nth-child(odd)::before {
+    top: 34px;
   }
 
   .steps-grid i svg {
