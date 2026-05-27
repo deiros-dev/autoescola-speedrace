@@ -933,7 +933,7 @@ h1 .title-place {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr auto;
   align-items: center;
   gap: 28px;
 }
@@ -947,6 +947,24 @@ h1 .title-place {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.6;
+}
+
+.footer-online {
+  justify-self: end;
+  padding: 9px 12px;
+  color: #5f5f5f;
+  border: 1px solid rgba(26, 26, 26, .12);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: color .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.footer-online:hover {
+  color: var(--red);
+  background: rgba(227, 6, 19, .04);
+  border-color: rgba(227, 6, 19, .28);
 }
 
 .floating-whatsapp {
@@ -1135,6 +1153,10 @@ h1 .title-place {
     width: 100%;
     min-width: 0;
   }
+
+  .footer-online {
+    justify-self: start;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1222,5 +1244,9 @@ h1 .title-place {
 
   .footer-grid {
     align-items: start;
+  }
+
+  .footer-online {
+    width: fit-content;
   }
 }
