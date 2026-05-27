@@ -1,0 +1,345 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auto Escola Speed Race | CNH em Guarulhos</title>
+  <meta name="description" content="Auto Escola Speed Race em Guarulhos. Tire sua CNH nas categorias A, B e AB com atendimento rapido pelo WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="icon-whatsapp" viewBox="0 0 32 32">
+      <path fill="currentColor" d="M16.02 3C8.86 3 3.03 8.81 3.03 15.95c0 2.29.6 4.52 1.75 6.49L3 29l6.73-1.76a13 13 0 0 0 6.29 1.6h.01c7.16 0 12.99-5.81 12.99-12.95C29.02 8.81 23.19 3 16.02 3Zm0 23.65h-.01c-1.93 0-3.82-.52-5.47-1.5l-.39-.23-3.99 1.04 1.07-3.88-.25-.4a10.67 10.67 0 0 1-1.64-5.73c0-5.93 4.79-10.76 10.68-10.76 2.85 0 5.53 1.12 7.55 3.15a10.63 10.63 0 0 1 3.13 7.55c0 5.93-4.79 10.76-10.68 10.76Zm5.86-8.05c-.32-.16-1.9-.94-2.19-1.04-.29-.11-.51-.16-.72.16-.21.31-.83 1.04-1.02 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.58-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.15-.15.32-.38.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.66 0 1.57 1.15 3.09 1.31 3.3.16.21 2.27 3.46 5.49 4.85.77.33 1.37.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37Z"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path fill="currentColor" d="m9.55 16.7-4.2-4.2 1.42-1.42 2.78 2.78 7.68-7.68 1.42 1.42-9.1 9.1Z"/>
+    </symbol>
+    <symbol id="icon-card" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 4h16V7H4v2Zm0 3v5h16v-5H4Zm2 2h5v1.5H6V14Z"/>
+    </symbol>
+    <symbol id="icon-instructor" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8a7 7 0 0 1 14 0v1H5v-1Zm14.5-9.5h-3v-2h3v-3h2v3h3v2h-3v3h-2v-3Z"/>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2 4 5.1v6.3c0 5.1 3.4 9.7 8 11.1 4.6-1.4 8-6 8-11.1V5.1L12 2Zm0 2.2 6 2.3v4.9c0 4-2.5 7.7-6 8.9-3.5-1.2-6-4.9-6-8.9V6.5l6-2.3Zm-1 10.1-2.5-2.5-1.4 1.4 3.9 3.9 6-6-1.4-1.4-4.6 4.6Z"/>
+    </symbol>
+    <symbol id="icon-thumbs" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M9 21H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h5v11Zm2 0V10.2l4.2-6.9c.4-.7 1.2-1.1 2-1 .9.1 1.6.7 1.8 1.6.2.7.1 1.4-.2 2.1L17.4 9H20a2 2 0 0 1 2 2.3l-1.1 7A3.1 3.1 0 0 1 17.8 21H11ZM4 12v7h3v-7H4Z"/>
+    </symbol>
+    <symbol id="icon-car" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M6.6 6h10.8c.9 0 1.7.6 2 1.5L20.5 11A2.5 2.5 0 0 1 23 13.5V18h-2v1.5a2.5 2.5 0 0 1-5 0V18H8v1.5a2.5 2.5 0 0 1-5 0V18H1v-4.5A2.5 2.5 0 0 1 3.5 11l1.1-3.5c.3-.9 1.1-1.5 2-1.5Zm.1 2-1 3h12.6l-1-3H6.7ZM3 13.5V16h18v-2.5a.5.5 0 0 0-.5-.5h-17a.5.5 0 0 0-.5.5ZM5 18v1.5a.5.5 0 0 0 1 0V18H5Zm12 0v1.5a.5.5 0 0 0 1 0V18h-1Z"/>
+    </symbol>
+    <symbol id="icon-doc" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M6 2h9l5 5v15H6V2Zm8 2.8V8h3.2L14 4.8ZM8 4v16h10V10h-6V4H8Zm2 8h6v2h-6v-2Zm0 4h6v2h-6v-2Z"/>
+    </symbol>
+    <symbol id="icon-wheel" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm0 2a8 8 0 0 0-7.7 5.9h15.4A8 8 0 0 0 12 4Zm-7.9 8a8 8 0 0 0 5.8 7.7l1.1-5.2A3 3 0 0 1 9.2 12H4.1Zm10 7.7A8 8 0 0 0 19.9 12h-5.1a3 3 0 0 1-1.8 2.5l1.1 5.2ZM12 9.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4Z"/>
+    </symbol>
+  </svg>
+
+  <main class="hero" id="inicio">
+    <nav class="hero-nav" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Auto Escola Speed Race">
+        <img src="assets/logo-speed-race.png" alt="Auto Escola Speed Race">
+      </a>
+
+      <div class="nav-links">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <a class="whatsapp nav-cta" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">
+        <svg><use href="#icon-whatsapp"/></svg>
+        Falar no WhatsApp
+      </a>
+    </nav>
+
+    <section class="hero-content" aria-labelledby="hero-title">
+      <div class="copy">
+        <p class="eyebrow">Auto escola em Guarulhos</p>
+        <h1 id="hero-title">Sua CNH<br><span>mais rápida</span><br><span class="title-place">em&nbsp;Guarulhos</span></h1>
+        <p class="lead">Processo simples, atendimento humanizado e suporte completo para você conquistar sua habilitação sem enrolação.</p>
+
+        <div class="hero-benefits" aria-label="Benefícios">
+          <span><svg><use href="#icon-whatsapp"/></svg>Atendimento via WhatsApp</span>
+          <span><svg><use href="#icon-card"/></svg>Parcelamento facilitado</span>
+          <span><svg><use href="#icon-instructor"/></svg>Instrutores experientes</span>
+        </div>
+
+        <a class="whatsapp hero-cta" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">
+          <svg><use href="#icon-whatsapp"/></svg>
+          Quero tirar minha CNH
+        </a>
+        <small>Fale agora com um especialista</small>
+      </div>
+
+    </section>
+  </main>
+
+  <section class="section benefits-section" aria-labelledby="benefits-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Confiança para começar</p>
+        <h2 id="benefits-title">Por que escolher a <span>Speed Race?</span></h2>
+      </div>
+
+      <div class="card-grid benefits-grid">
+        <article class="info-card"><i><svg><use href="#icon-shield"/></svg></i><h3>Desde 1978</h3><p>Tradição e confiança que geram resultados.</p></article>
+        <article class="info-card"><i><svg><use href="#icon-instructor"/></svg></i><h3>Instrutores experientes</h3><p>Profissionais qualificados para te preparar melhor.</p></article>
+        <article class="info-card"><i><svg><use href="#icon-thumbs"/></svg></i><h3>Aprovação rápida</h3><p>Metodologia eficaz que aumenta suas chances.</p></article>
+        <article class="info-card"><i><svg><use href="#icon-card"/></svg></i><h3>Parcelamento facilitado</h3><p>Condições especiais que cabem no seu bolso.</p></article>
+        <article class="info-card"><i><svg><use href="#icon-whatsapp"/></svg></i><h3>Atendimento via WhatsApp</h3><p>Fale direto com a gente de forma rápida.</p></article>
+        <article class="info-card"><i><svg><use href="#icon-car"/></svg></i><h3>Frota moderna e segura</h3><p>Veículos novos e equipados para seu aprendizado.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section categories-section" id="categorias" aria-labelledby="categories-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Categorias disponíveis</p>
+        <h2 id="categories-title">Escolha sua <span>categoria</span></h2>
+      </div>
+
+      <div class="card-grid category-grid">
+        <article class="category-card">
+          <p>Categoria</p>
+          <h3>A</h3>
+          <strong>Moto</strong>
+          <ul>
+            <li>Motocicletas</li>
+            <li>Mais liberdade</li>
+            <li>Mais economia</li>
+          </ul>
+          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">Quero essa categoria</a>
+        </article>
+
+        <article class="category-card featured">
+          <span class="badge">A mais escolhida</span>
+          <p>Categoria</p>
+          <h3>AB</h3>
+          <strong>Carro + moto</strong>
+          <ul>
+            <li>Carro + Moto</li>
+            <li>Mais oportunidades</li>
+            <li>Mobilidade completa</li>
+          </ul>
+          <a class="category-button yellow" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">Quero essa categoria</a>
+        </article>
+
+        <article class="category-card">
+          <p>Categoria</p>
+          <h3>B</h3>
+          <strong>Carro</strong>
+          <ul>
+            <li>Carros</li>
+            <li>Mais independência</li>
+            <li>Seu futuro começa aqui</li>
+          </ul>
+          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">Quero essa categoria</a>
+        </article>
+
+        <article class="category-card">
+          <p>Categoria</p>
+          <h3>D</h3>
+          <strong>Ônibus e vans</strong>
+          <ul>
+            <li>Veículos de passageiros</li>
+            <li>Mais oportunidades</li>
+            <li>Formação profissional</li>
+          </ul>
+          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20Categoria%20D%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">Quero essa categoria</a>
+        </article>
+
+        <article class="category-card service-card">
+          <p>Serviço</p>
+          <h3>CNH</h3>
+          <strong>Reciclagem</strong>
+          <ul>
+            <li>Reciclagem de CNH</li>
+            <li>Regularize sua habilitação</li>
+            <li>Atendimento rápido</li>
+          </ul>
+          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20reciclagem%20de%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">Quero reciclagem</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reviews-section" id="avaliacoes" aria-labelledby="reviews-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Avaliações</p>
+        <h2 id="reviews-title">Alunos aprovados, <span>sonhos realizados!</span></h2>
+      </div>
+
+      <div class="reviews-carousel" aria-roledescription="carousel" aria-label="Avaliações de alunos">
+        <button class="review-control prev" type="button" aria-label="Avaliação anterior">&lsaquo;</button>
+        <div class="review-viewport">
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="review-head"><span>J</span><div><strong>Josué Angélico</strong><small>5 meses atrás</small></div></div>
+              <div class="stars">★★★★★</div>
+              <p>Excelente atendimento e muito atenciosos! Tirei minha habilitação em um mês e meio. Agradeço ao Paulo e à esposa dele, e também aos instrutores Rafael e Fernando.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-head"><span>L</span><div><strong>Letícia Caselato</strong><small>7 meses atrás</small></div></div>
+              <div class="stars">★★★★★</div>
+              <p>Finalizei minha CNH super rápido, sempre tive total apoio, o instrutor Paulo é nota 10.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-head"><span>F</span><div><strong>Fernanda Dantas</strong><small>9 meses atrás</small></div></div>
+              <div class="stars">★★★★★</div>
+              <p>Super recomendo, bons instrutores e atendimento perfeito. São bons profissionais e com certeza a melhor auto escola.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-head"><span>P</span><div><strong>Pedro Henrique</strong><small>9 meses atrás</small></div></div>
+              <div class="stars">★★★★★</div>
+              <p>A auto escola Speed Race me proporcionou a oportunidade de estar tirando minha habilitação. Profissionais bastante atenciosos e capacitados.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-head"><span>V</span><div><strong>Vini Silva</strong><small>10 meses atrás</small></div></div>
+              <div class="stars">★★★★★</div>
+              <p>Atendimento muito bom com bons instrutores, principalmente o instrutor Thiago, que é muito bom como profissional.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-head"><span>H</span><div><strong>Henrique Macedo</strong><small>3 meses atrás</small></div></div>
+              <div class="stars">★★★★★</div>
+              <p>Professores e diretoria excelentes, ótima autoescola. Fernandão é monstro.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-head"><span>M</span><div><strong>Matheus Henrique</strong><small>9 meses atrás</small></div></div>
+              <div class="stars">★★★★★</div>
+              <p>Auto-escola com pessoas muito solícitas, íntegras e extremamente atenciosas. Instrutores que se preocupam e buscam de fato ajudar o aluno.</p>
+            </article>
+          </div>
+        </div>
+        <button class="review-control next" type="button" aria-label="Próxima avaliação">&rsaquo;</button>
+        <div class="review-dots" aria-label="Selecionar avaliação"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section steps-section" id="como-funciona" aria-labelledby="steps-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Passo a passo</p>
+        <h2 id="steps-title">Como <span>funciona</span></h2>
+      </div>
+
+      <div class="steps-grid">
+        <article>
+          <i><svg><use href="#icon-whatsapp"/></svg></i>
+          <div class="step-copy"><strong>01</strong><h3>Chama no WhatsApp</h3><p>Fale com a gente e tire todas as suas dúvidas.</p></div>
+        </article>
+        <article>
+          <i><svg><use href="#icon-doc"/></svg></i>
+          <div class="step-copy"><strong>02</strong><h3>Faz sua matrícula</h3><p>Processo rápido, fácil e sem burocracia.</p></div>
+        </article>
+        <article>
+          <i><svg><use href="#icon-wheel"/></svg></i>
+          <div class="step-copy"><strong>03</strong><h3>Inicia suas aulas</h3><p>Aulas teóricas e práticas com instrutores experientes.</p></div>
+        </article>
+        <article>
+          <i><svg><use href="#icon-check"/></svg></i>
+          <div class="step-copy"><strong>04</strong><h3>Conquista sua CNH</h3><p>Com foco, preparação e suporte certo, você consegue!</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta" id="contato">
+    <div class="container final-grid">
+      <div>
+        <p class="eyebrow light">Matrículas abertas</p>
+        <h2>Pronto para conquistar sua liberdade?</h2>
+        <p>Fale agora com um especialista e dê o primeiro passo rumo à sua CNH.</p>
+      </div>
+      <div class="final-actions">
+        <a class="whatsapp final-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">
+          <svg><use href="#icon-whatsapp"/></svg>
+          Falar com especialista
+        </a>
+        <div class="cta-points">
+          <span>Resposta rápida</span>
+          <span>Atendimento humanizado</span>
+          <span>Suporte do início ao fim</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <img src="assets/logo-speed-race.png" alt="Auto Escola Speed Race">
+      <p>Desde 1978 formando motoristas conscientes e preparados para um trânsito mais seguro.</p>
+      <p><strong>(11) 98608-1051</strong><br>Av. Tiradentes, 1444 - Centro - Guarulhos/SP</p>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg><use href="#icon-whatsapp"/></svg>
+  </a>
+
+  <script>
+    const carousel = document.querySelector(".reviews-carousel");
+
+    if (carousel) {
+      const track = carousel.querySelector(".review-grid");
+      const slides = Array.from(carousel.querySelectorAll(".review-card"));
+      const prev = carousel.querySelector(".prev");
+      const next = carousel.querySelector(".next");
+      const dotsWrap = carousel.querySelector(".review-dots");
+      let current = 0;
+      let timer;
+
+      slides.forEach((_, index) => {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.setAttribute("aria-label", `Mostrar avaliação ${index + 1}`);
+        dot.addEventListener("click", () => {
+          showSlide(index);
+          restart();
+        });
+        dotsWrap.appendChild(dot);
+      });
+
+      const dots = Array.from(dotsWrap.querySelectorAll("button"));
+
+      function showSlide(index) {
+        current = (index + slides.length) % slides.length;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((dot, dotIndex) => {
+          dot.classList.toggle("active", dotIndex === current);
+        });
+      }
+
+      function restart() {
+        window.clearInterval(timer);
+        timer = window.setInterval(() => showSlide(current + 1), 5200);
+      }
+
+      prev.addEventListener("click", () => {
+        showSlide(current - 1);
+        restart();
+      });
+
+      next.addEventListener("click", () => {
+        showSlide(current + 1);
+        restart();
+      });
+
+      showSlide(0);
+      restart();
+    }
+  </script>
+</body>
+</html>
+
