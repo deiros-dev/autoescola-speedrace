@@ -1,23 +1,47 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
+  "builds": [
     {
-      "source": "/matricular",
-      "destination": "/matricular/index.html"
+      "src": "index.html",
+      "use": "@vercel/static"
     },
     {
-      "source": "/matricular/",
-      "destination": "/matricular/index.html"
+      "src": "styles.css",
+      "use": "@vercel/static"
     },
     {
-      "source": "/",
-      "destination": "/index.html"
+      "src": "assets/**",
+      "use": "@vercel/static"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "public/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "matricular/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/styles.css",
+      "dest": "/styles.css"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/matricular/?",
+      "dest": "/matricular/index.html"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
     }
   ]
 }
