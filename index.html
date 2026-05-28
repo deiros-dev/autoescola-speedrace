@@ -86,77 +86,35 @@
     </section>
   </main>
   <section class="section categories-section" id="categorias" aria-labelledby="categories-title">
+    <div class="section-head categories-title-block">
+      <p class="eyebrow">categorias</p>
+      <h2 id="categories-title">Escolha a <span>categoria ideal</span> para você</h2>
+    </div>
+
     <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Categorias disponíveis</p>
-        <h2 id="categories-title">Escolha sua <span>categoria</span></h2>
-      </div>
-
       <div class="card-grid category-grid">
-        <article class="category-card">
-          <p>Categoria</p>
-          <h3>A</h3>
-          <strong>Moto</strong>
-          <ul>
-            <li>Motocicletas</li>
-            <li>Mais liberdade</li>
-            <li>Mais economia</li>
-          </ul>
-          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">Quero essa categoria</a>
+        <article class="category-card card-art">
+          <img class="card-art-image" src="assets/Card moto.png" alt="Categoria A - Moto">
+          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20tirar%20minha%20CNH%20categoria%20A%20%28moto%29%20na%20Auto%20Escola%20Speed%20Race." target="_blank" rel="noopener">Quero Categoria A</a>
         </article>
 
-        <article class="category-card featured">
-          <span class="badge">A mais<br>escolhida</span>
-          <p>Categoria</p>
-          <h3>AB</h3>
-          <strong>Carro + moto</strong>
-          <ul>
-            <li>Carro + Moto</li>
-            <li>Mais oportunidades</li>
-            <li>Mobilidade completa</li>
-          </ul>
-          <a class="category-button yellow" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">Quero essa categoria</a>
+        <article class="category-card card-art featured">
+          <img class="card-art-image" src="assets/Card carro.png" alt="Categoria B - Carro">
+          <a class="category-button yellow" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20tirar%20minha%20CNH%20categoria%20B%20%28carro%29%20na%20Auto%20Escola%20Speed%20Race." target="_blank" rel="noopener">Quero Categoria B</a>
         </article>
 
-        <article class="category-card">
-          <p>Categoria</p>
-          <h3>B</h3>
-          <strong>Carro</strong>
-          <ul>
-            <li>Carros</li>
-            <li>Mais independência</li>
-            <li>Seu futuro começa aqui</li>
-          </ul>
-          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">Quero essa categoria</a>
+        <article class="category-card card-art">
+          <img class="card-art-image" src="assets/Card carro e moto.png" alt="Categoria AB - Carro e moto">
+          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20tirar%20minha%20CNH%20categoria%20AB%20%28carro%20e%20moto%29%20na%20Auto%20Escola%20Speed%20Race." target="_blank" rel="noopener">Quero Categoria AB</a>
         </article>
 
-        <article class="category-card">
-          <p>Categoria</p>
-          <h3>D</h3>
-          <strong>Ônibus e vans</strong>
-          <ul>
-            <li>Veículos de passageiros</li>
-            <li>Mais oportunidades</li>
-            <li>Formação profissional</li>
-          </ul>
-          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20Categoria%20D%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">Quero essa categoria</a>
-        </article>
-
-        <article class="category-card service-card">
-          <p>Serviço</p>
-          <h3>CNH</h3>
-          <strong>Reciclagem</strong>
-          <ul>
-            <li>Reciclagem de CNH</li>
-            <li>Regularize sua habilitação</li>
-            <li>Atendimento rápido</li>
-          </ul>
-          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20reciclagem%20de%20CNH%20na%20Auto%20Escola%20Speed%20Race" target="_blank" rel="noopener">Quero reciclagem</a>
+        <article class="category-card card-art pro-card">
+          <img class="card-art-image" src="assets/Card Onibus.png" alt="Categoria D - Onibus e vans">
+          <a class="category-button" href="https://wa.me/5511986081051?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20CNH%20categoria%20D%20%28%C3%B4nibus%20e%20vans%29%20na%20Auto%20Escola%20Speed%20Race." target="_blank" rel="noopener">Quero Categoria D</a>
         </article>
       </div>
     </div>
   </section>
-
   <section class="section benefits-section" aria-labelledby="benefits-title">
     <div class="container">
       <div class="section-head">
@@ -294,6 +252,64 @@
   </a>
 
   <script>
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!reduceMotion) {
+      const revealItems = document.querySelectorAll(".section-head, .category-card, .info-card, .steps-grid article, .final-cta");
+      revealItems.forEach((item) => item.classList.add("reveal"));
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: .16 });
+
+      revealItems.forEach((item) => revealObserver.observe(item));
+
+      const hero = document.querySelector(".hero");
+      const categories = document.querySelector(".categories-section");
+      const categoryCards = document.querySelectorAll(".category-card");
+      let ticking = false;
+
+      function updateParallax() {
+        const scrollY = window.scrollY || window.pageYOffset;
+
+        if (hero) {
+          hero.style.setProperty("--hero-parallax", `${Math.min(scrollY * .16, 72)}px`);
+        }
+
+        if (categories) {
+          const rect = categories.getBoundingClientRect();
+          const offset = (window.innerHeight - rect.top) * .08;
+          const sectionShift = Math.max(-40, Math.min(offset, 70));
+          categories.style.setProperty("--section-shift-left", `${sectionShift * -.35}px`);
+          categories.style.setProperty("--section-shift-right", `${sectionShift * .25}px`);
+        }
+
+        categoryCards.forEach((card) => {
+          const rect = card.getBoundingClientRect();
+          const centerOffset = (window.innerHeight / 2 - (rect.top + rect.height / 2)) * .035;
+          card.style.setProperty("--card-parallax", `${Math.max(-16, Math.min(centerOffset, 16))}px`);
+        });
+
+        ticking = false;
+      }
+
+      function requestParallax() {
+        if (!ticking) {
+          window.requestAnimationFrame(updateParallax);
+          ticking = true;
+        }
+      }
+
+      window.addEventListener("scroll", requestParallax, { passive: true });
+      window.addEventListener("resize", requestParallax);
+      updateParallax();
+    }
+
     const carousel = document.querySelector(".reviews-carousel");
 
     if (carousel) {
