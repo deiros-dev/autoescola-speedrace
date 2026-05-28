@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
@@ -87,7 +87,7 @@
   </main>
   <section class="section categories-section" id="categorias" aria-labelledby="categories-title">
     <div class="section-head categories-title-block">
-      <p class="eyebrow">categorias</p>
+      <!--<p class="eyebrow">categorias</p>-->
       <h2 id="categories-title">Escolha a <span>categoria ideal</span> para você</h2>
     </div>
 
@@ -154,12 +154,48 @@
     </div>
   </section>
 
-
   <section class="section reviews-section" id="avaliacoes" aria-labelledby="reviews-title">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Avaliações</p>
         <h2 id="reviews-title">Alunos aprovados, <span>sonhos realizados!</span></h2>
+      </div>
+
+      <div class="approved-carousel" aria-roledescription="carousel" aria-label="Fotos de alunos aprovados">
+        <button class="review-control prev" type="button" aria-label="Foto anterior">&lsaquo;</button>
+        <div class="review-viewport">
+          <div class="review-grid">
+            <article class="review-card"><img src="assets/approved/aluno.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno2.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno3.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno4.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno5.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno6.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno7.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno8.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno9.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno10.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno11.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno12.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno13.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno14.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno15.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno16.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno17.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno18.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno19.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno20.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno21.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno22.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno23.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno24.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno25.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno26.png" alt="Aluno aprovado"></article>
+            <article class="review-card"><img src="assets/approved/aluno27.png" alt="Aluno aprovado"></article>
+          </div>
+        </div>
+        <button class="review-control next" type="button" aria-label="Próxima foto">&rsaquo;</button>
+        <div class="review-dots" aria-label="Selecionar foto"></div>
       </div>
 
       <div class="reviews-carousel" aria-roledescription="carousel" aria-label="Avaliações de alunos">
@@ -379,6 +415,57 @@
 
       showSlide(0);
       restart();
+    }
+
+    const approvedCarousel = document.querySelector(".approved-carousel");
+
+    if (approvedCarousel) {
+      const aTrack = approvedCarousel.querySelector(".review-grid");
+      const aSlides = Array.from(approvedCarousel.querySelectorAll(".review-card"));
+      const aPrev = approvedCarousel.querySelector(".prev");
+      const aNext = approvedCarousel.querySelector(".next");
+      const aDotsWrap = approvedCarousel.querySelector(".review-dots");
+      let aCurrent = 0;
+      let aTimer;
+
+      aSlides.forEach((_, index) => {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.setAttribute("aria-label", `Mostrar foto ${index + 1}`);
+        dot.addEventListener("click", () => {
+          aShowSlide(index);
+          aRestart();
+        });
+        aDotsWrap.appendChild(dot);
+      });
+
+      const aDots = Array.from(aDotsWrap.querySelectorAll("button"));
+
+      function aShowSlide(index) {
+        aCurrent = (index + aSlides.length) % aSlides.length;
+        aTrack.style.transform = `translateX(-${aCurrent * 100}%)`;
+        aDots.forEach((dot, dotIndex) => {
+          dot.classList.toggle("active", dotIndex === aCurrent);
+        });
+      }
+
+      function aRestart() {
+        window.clearInterval(aTimer);
+        aTimer = window.setInterval(() => aShowSlide(aCurrent + 1), 4200);
+      }
+
+      aPrev.addEventListener("click", () => {
+        aShowSlide(aCurrent - 1);
+        aRestart();
+      });
+
+      aNext.addEventListener("click", () => {
+        aShowSlide(aCurrent + 1);
+        aRestart();
+      });
+
+      aShowSlide(0);
+      aRestart();
     }
   </script>
 </body>

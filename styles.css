@@ -324,10 +324,17 @@ h1 .title-place {
   font-weight: 400;
   line-height: .9;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .section-head h2 span {
   color: var(--red);
+}
+
+.reviews-section .section-head {
+  max-width: 720px;
+  margin: 0 auto 34px;
+  text-align: center;
 }
 
 .reviews-section .section-head h2 {
@@ -876,7 +883,16 @@ h1 .title-place {
   position: relative;
   max-width: 780px;
   margin: 0 auto;
-  padding: 0 58px 38px;
+  padding: 0 0 38px;
+}
+
+.reviews-section .section-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto 34px;
+  text-align: center;
 }
 
 .review-viewport {
@@ -942,6 +958,34 @@ h1 .title-place {
   margin-top: 12px;
   font-size: 14px;
   line-height: 1.65;
+}
+
+.review-card img {
+  display: block;
+  width: clamp(600px, 18vw, 160px);
+  height: auto;
+  margin: 10px auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+.approved-carousel .review-viewport {
+  border-radius: 0;
+}
+
+.approved-carousel .review-card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+  transition: none;
+}
+
+.approved-carousel .review-card:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 .review-control {
@@ -2625,4 +2669,21 @@ h1 .title-place {
   margin-left: auto;
   text-align: center;
   white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .categories-section .categories-title-block h2 {
+    white-space: normal;
+  }
+
+  .category-card.card-art .category-button {
+    opacity: 0.7;
+    transition: opacity 0.25s ease, background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .category-card.card-art .category-button:hover,
+  .category-card.card-art .category-button:active,
+  .category-card.card-art .category-button:focus {
+    opacity: 1;
+  }
 }
