@@ -51,7 +51,10 @@ svg {
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(255, 255, 255, .96) 0%, rgba(255, 255, 255, .86) 32%, rgba(255, 255, 255, .06) 63%),
-    url("assets/banner novo.png") center right / cover no-repeat;
+    image-set(
+      url("assets/optimized/banner-hero-960.jpg") 1x,
+      url("assets/optimized/banner-hero-1920.jpg") 2x
+    ) center right / cover no-repeat;
   background-position: center center, center calc(50% + var(--hero-parallax, 0px));
 }
 
@@ -1238,7 +1241,7 @@ h1 .title-place {
   position: relative;
   padding: 54px 0;
   color: var(--white);
-  background: url("assets/BANNER.png") center / cover no-repeat;
+  background: url("assets/optimized/banner-legacy-1400.jpg") center / cover no-repeat;
   overflow: hidden;
 }
 
@@ -1384,7 +1387,10 @@ h1 .title-place {
   .hero {
     background:
       linear-gradient(90deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .92) 45%, rgba(255, 255, 255, .28) 100%),
-      url("assets/banner novo.png") 62% center / cover no-repeat;
+      image-set(
+        url("assets/optimized/banner-hero-960.jpg") 1x,
+        url("assets/optimized/banner-hero-1920.jpg") 2x
+      ) 62% center / cover no-repeat;
     background-position: center center, 62% calc(50% + var(--hero-parallax, 0px));
   }
 
@@ -1430,7 +1436,10 @@ h1 .title-place {
     min-height: auto;
     background:
       linear-gradient(180deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .92) 50%, rgba(255, 255, 255, .4) 100%),
-      url("assets/banner novo.png") 68% 170px / auto 62% no-repeat;
+      image-set(
+        url("assets/optimized/banner-hero-960.jpg") 1x,
+        url("assets/optimized/banner-hero-1920.jpg") 2x
+      ) 68% 170px / auto 62% no-repeat;
     background-position: center center, 68% calc(170px + var(--hero-parallax, 0px));
   }
 
