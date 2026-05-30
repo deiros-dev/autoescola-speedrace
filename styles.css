@@ -2870,5 +2870,6 @@ h1 .title-place {
   .category-card.card-art .category-button:active,
   .category-card.card-art .category-button:focus {
     opacity: 1;
+    
   }
 }
