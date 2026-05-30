@@ -1451,7 +1451,8 @@ h1 .title-place {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.6;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
 }
 
 .floating-whatsapp {
