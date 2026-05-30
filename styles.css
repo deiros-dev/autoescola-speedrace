@@ -1835,6 +1835,12 @@ h1 .title-place {
     width: 100%;
     justify-self: stretch;
   }
+
+  .footer-copy {
+    white-space: normal;
+    text-align: center;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 380px) {
